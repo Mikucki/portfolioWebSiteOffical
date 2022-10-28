@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+
+.section__title {
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: var(--clr-accent);
+  font-family: var(--ff-secondary);
+}
+
+/* INTRO HERE */
+.intro {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 50vw;
+  text-align: right;
+}
+
+.intro div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+
+.intro img {
+  position: absolute;
+  height: 350px;
+  left: 350px;
+}
+
+.section__title {
+  font-weight: normal;
+}
+
+.section__title strong {
+  display: block;
+  font-weight: bold;
+}
+
+.section__subtitle--intro {
+  width: 300%;
+}
+
+.my-services {
+  margin-top: 15vh;
+  background-color: red;
+  padding: 2em 3em;
+  background-image: url(./img/services-bg.jpg);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.service {
+  padding: 2em;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.section__title--services {
+  padding: 0.5 em;
+  text-align: center;
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+}
+
+.btn {
+  color: black;
+  background-color: #16e0bd;
+  padding: 1em 3em;
+  text-decoration: none;
+  font-weight: var(--fw-bold);
+  display: inline-block;
+}
